@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Fonts  -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet" />
+
+    <!-- CSS import -->
+    <link href="style.css" rel="stylesheet" />
+    <title>Jonas Accordion Example</title>
+
+</head>
+
+<body>
+    <div class="carousel">
+        <img class="testimonial-profile-img" src="/imgs/maria.jpg" alt="Maria de Almeida">
+        <blockquote class="testimonial">
+            <p class="testimonial-text">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla sapiente
+                quibusdam vero eum, mollitia nam repudiandae esse numquam ducimus debitis natus aperiam magni, tenetur
+                voluptate quos ut corporis aliquid adipisci."</p>
+            <p class="testimonial-auth">Maria de Almeida</p>
+            <p class="testimonial-auth-title">Product Manager at EDP Comercial</p>
+        </blockquote>
+
+        <button class="btn btn--left">
+            <svg class="btn-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+            </svg>
+        </button>
+
+        <button class="btn btn--right">
+            <svg class="btn-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+            </svg>
+        </button>
+        <div class="dots">
+            <button class="dot dot--active">&nbsp</button>
+            <button class="dot">&nbsp</button>
+            <button class="dot">&nbsp</button>
+            <button class="dot">&nbsp</button>
+        </div>
+    </div>
+
+
+
+
+    <!-- In order to apply to styles to the desired item (1-3), simply 
+        add the the class "open" to the desired div with class item -->
+    <div class="accordion">
+        <div class="item">
+            <p class="acc-number"> 01</p>
+            <p class="acc-header">Where are these chairs Assembled?</p>
+            <svg class="acc-accordion-icon" xmlns=" http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                stroke-width="1.5" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+            </svg>
+            <div class="acc-hidden-box">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta molestiae vitae doloremque
+                    reprehenderit
+                    optio nemo eos aut magni ex tenetur, iste earum sequi dolorum vero maxime asperiores amet minima
+                    aliquam?</p>
+                <ul>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                    <li>Iste accusamus quo temporibus vero quisquam. </li>
+                    <li>Deserunt inima magnam, eum, id nisi
+                        sint non offic tatibus!</li>
+                    <li>laboriosam eligendi dolor sit Soluta molestiae</li>
+                </ul>
+            </div>
+        </div>
+        <div class="item open">
+            <p class="acc-number"> 02</p>
+            <p class="acc-header">How long do I have to return my chair?</p>
+            <svg class="acc-accordion-icon" xmlns=" http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                stroke-width="1.5" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+            </svg>
+            <div class="acc-hidden-box">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta molestiae vitae doloremque
+                    reprehenderit
+                    optio nemo eos aut magni ex tenetur, iste earum sequi dolorum vero maxime asperiores amet minima
+                    aliquam?</p>
+                <ul>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                    <li>Iste accusamus quo temporibus vero quisquam. </li>
+                    <li>Deserunt inima magnam, eum, id nisi
+                        sint non offic tatibus!</li>
+                    <li>laboriosam eligendi dolor sit Soluta molestiae</li>
+                </ul>
+            </div>
+        </div>
+        <div class="item">
+            <p class="acc-number"> 03</p>
+            <p class="acc-header">Do you ship to countries outside the EU?</p>
+            <svg class="acc-accordion-icon" xmlns=" http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                stroke-width="1.5" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+            </svg>
+            <div class="acc-hidden-box">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta molestiae vitae doloremque
+                    reprehenderit
+                    optio nemo eos aut magni ex tenetur, iste earum sequi dolorum vero maxime asperiores amet minima
+                    aliquam?</p>
+                <ul>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                    <li>Iste accusamus quo temporibus vero quisquam. </li>
+                    <li>Deserunt inima magnam, eum, id nisi
+                        sint non offic tatibus!</li>
+                    <li>laboriosam eligendi dolor sit Soluta molestiae</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
