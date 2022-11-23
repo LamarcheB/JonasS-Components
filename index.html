@@ -12,12 +12,56 @@
 
     <!-- CSS import -->
     <link href="style.css" rel="stylesheet" />
-    <title>Jonas Accordion Example</title>
-
+    <title>Jonas Working with Components</title>
 </head>
 
 <body>
-    <div class="table-container">
+
+    <section class="page-counter">
+        <!-- should look like:
+        < 1 2 3 4 5 6 ... 23 >
+        the <> are buttons, the numbers are links, and the ... is a span
+        When hover, the element should go green background color, white font -->
+
+        <button class="page-counter-btn">
+            <svg class="page-counter-btn-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                stroke-width="1.5" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+            </svg>
+        </button>
+
+        <a class="" href="#">1</a>
+        <a class="" href="#">2</a>
+        <a class="page-selected" href="#">3</a>
+        <a class="" href="#">4</a>
+        <a class="" href="#">5</a>
+        <a class="" href="#">6</a>
+        <span>...</span>
+        <a href="#">23</a>
+
+
+
+
+        <button class="page-counter-btn">
+            <svg class="page-counter-btn-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                stroke-width="1.5" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+            </svg>
+
+
+
+
+
+
+
+
+
+
+    </section>
+
+
+
+    <section class="table-container">
         <table>
             <thead>
                 <tr>
@@ -54,8 +98,9 @@
                 </tr>
             </tbody>
         </table>
-    </div>
-    <div class="carousel">
+    </section>
+
+    <section class="carousel">
         <img class="testimonial-profile-img" src="/imgs/maria.jpg" alt="Maria de Almeida">
         <blockquote class="testimonial">
             <p class="testimonial-text">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla sapiente
@@ -84,12 +129,9 @@
             <button class="dot">&nbsp</button>
             <button class="dot">&nbsp</button>
         </div>
-    </div>
+    </section>
 
-
-
-
-    <div class="accordion">
+    <section class="accordion">
         <!-- In order to apply to styles to the desired item (1-3), simply 
             add the the class "open" to the desired div with class item -->
         <div class="item">
@@ -155,9 +197,7 @@
                 </ul>
             </div>
         </div>
-    </div>
-
-
+    </section>
 </body>
 
 </html>

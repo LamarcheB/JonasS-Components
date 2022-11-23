@@ -234,3 +234,65 @@ tr:nth-child(even) {
 tr:nth-child(even) {
   background: #b5bfc7;
 }
+
+/* ------------------------ */
+/****    Page Counter    ****/
+/* ------------------------ */
+
+.page-counter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  margin: 30px 0;
+  font-size: 16px;
+}
+
+.page-counter-btn-icon {
+  stroke: #087f5b;
+  height: 16px;
+  width: 16px;
+}
+
+.page-counter-btn {
+  border: 1px solid #087f5b;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+}
+
+.page-counter-btn:hover .page-counter-btn-icon {
+  stroke: #e6fcf5;
+}
+
+.page-counter-btn:hover {
+  background-color: #087f5b;
+}
+
+.page-counter a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+}
+
+.page-counter a:link,
+.page-counter a:visited {
+  text-decoration: none;
+  width: 26px;
+  height: 26px;
+}
+.page-counter a:hover,
+.page-counter a:active,
+.page-counter .page-selected {
+  color: #e6fcf5;
+  background-color: #087f5b;
+  border: 1px solid #087f5b;
+  border-radius: 50%;
+}
