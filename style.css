@@ -139,7 +139,7 @@ body {
 
 .btn {
   position: absolute;
-  background-color: #fff;
+  background-color: #e6fcf5;
   border: none;
   width: 40px;
   height: 40px;
@@ -196,3 +196,41 @@ body {
 /* ------------------------ */
 /****       Tables       ****/
 /* ------------------------ */
+
+.table-container {
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 300px; /*  create space between elements */
+}
+
+table {
+  width: 800px;
+  margin-top: 100px;
+
+  /* 
+Border-collapse ~merges~ borders, instead of having 2 borders on each side, merge to one line.  
+Alternatively, it's good to use if you want to hide borders (in the event you want a solid row)
+*/
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 16px 24px;
+  text-align: left;
+}
+
+thead th {
+  background-color: #087f5b;
+  color: #e6fcf5;
+  width: 25%;
+}
+
+tr:nth-child(even) {
+  background: #f8f9fa;
+}
+
+tr:nth-child(even) {
+  background: #b5bfc7;
+}
